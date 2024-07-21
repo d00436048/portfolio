@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Utah Tech University</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style_sheet.css">
+  <script> 
+    function validateForm() {
+         if (document.forms[0].myEmail.value == "" ) {
+              alert("Please enter an e-mail address.");
+              return false;
+         } // end if
+         return true;
+    } // end function validateForm
+  </script>
+</head>
+<body>
+  <div id="wrapper" >
+    <div id="bluebar"></div>
+    <div id="greybar"></div>
+  <header>
+   <h1><a href="index.html">Utah Tech Univeristy</a></h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="students.html">Students</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="alumni.html">Alumni</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+  </nav>
+  <div id="alumnihero" >
+  </div>
+  <main>
+    <h2>Join Alumni Mailing List</h2>
+    <h3>Request Alumni Newsletter</h3>
+    <form method="post" onsubmit="return validateForm();" action="https://computing.utahtech.edu/web/1400/mail.php">
+      <label for="FName">First Name:</label>
+      <input type="text" id="FName" name="FName">
+      <label for="LName">Last Name:</label>
+      <input type="text" id="LName" name="LName">
+      <label for="E-mail">E-mail:</label>
+      <input type="text" id="myEmail" name="myEmail">
+      <label for="Phone">Phone:</label>
+      <input type="text" id="Phone" name="myPhone">
+      <label for="Comments">Comments:</label>
+      <textarea id="Comments" name="myComments" rows="4" cols="20"></textarea>
+      <input type="Submit" id="mySubmit" value="Submit">
+    </form>
+  </main>
+  <footer>
+      Copyright &copy; 2023 Utah Tech University<br>
+      <a href="d00438046@utahtech.edu">firstname.lastname@utahtech.edu</a>
+  </footer>
+</div>
+</body>
+</html>
